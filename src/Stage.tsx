@@ -40,7 +40,7 @@ export class Stage extends StageBase<Memory, any, any, any> {
   }
 
   // ── Initial load ──
-  async load(): Promise<Partial<LoadResponse<Memory>>> {
+  async load(): Promise<Partial<LoadResponse<any, any, Message>>> {
     return {
       success:      true,
       messageState: this.mem,
